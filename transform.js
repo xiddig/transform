@@ -1222,7 +1222,7 @@
     }
     exports = x;
   } else {
-    $context.kanpa = {
+    $context.Transform = {
       select: SELECT.select,
       inject: SELECT.inject,
       transform: TRANSFORM.transform,
