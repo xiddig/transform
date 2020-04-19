@@ -1,5 +1,5 @@
 {
-  "name": "@kanpa/transform",
+  "name": "@xiddig/transform",
   "version": "1.0.14",
   "description": "Template Transformation",
   "main": "transform.js",
