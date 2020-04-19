@@ -1,9 +1,9 @@
-# KANPA
+# XIDDIG TRANSFORM
 
 JSON Selector + Transformer
 
-- Website: [https://kanpa.github.io/site](https://kanpa.github.io/site)
-- Twitter: [@kanpa](https://www.twitter.com/kanpa)
+- Website: [https://github.com/xiddig/site](https://github.com/xiddig/site)
+- Twitter: [@xiddig](https://www.twitter.com/xiddig)
 
 ---
 
@@ -35,7 +35,7 @@ var data = {
 > Step 2. Find all key/value pairs that match a selector function
 
 ```js
-var sel = kanpa.select(data, function(key, val) {
+var sel = XT.select(data, function(key, val) {
   return /https?:/.test(val);
 })
 ```
@@ -96,7 +96,7 @@ var data = {
 > Step 2. Select and transform with a template JSON object
 
 ```js
-var sel = kanpa.select(data, function(key, val){
+var sel = XT.select(data, function(key, val){
             return key === 'sites';
           })
           .transformWith({
@@ -163,9 +163,9 @@ var root = sel.root();
 ## In a browser
 
 ```js
-<script src="kanpa.js"></script>
+<script src="transform.js"></script>
 <script>
-var parsed = kanpa.select({ "items": [1,2,3,4] })
+var parsed = XT.select({ "items": [1,2,3,4] })
                 .transformWith({
                   "{{#each items}}": {
                     "type": "label", "text": "{{this}}"
@@ -180,15 +180,15 @@ var parsed = kanpa.select({ "items": [1,2,3,4] })
 > Install through npm:
 
 ```bash
-$ npm install kanpa
+$ npm install @xiddig/transform --save
 ```
 
 > Use
 
 ```js
-const kanpa = require('kanpa');
+const XT = require('@xiddig/transform');
 
-const parsed = kanpa.select({ "items": [1,2,3,4] })
+const parsed = XT.select({ "items": [1,2,3,4] })
                 .transformWith({
                   "{{#each items}}": {
                     "type": "label", "text": "{{this}}"
@@ -197,4 +197,4 @@ const parsed = kanpa.select({ "items": [1,2,3,4] })
                 .root();
 ```
 
-### Learn more at [kanpa.github.io/site](https://kanpa.github.io/site)
+### Learn more at [https://github.com/xiddig/site](https://github.com/xiddig/site)

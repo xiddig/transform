@@ -1,5 +1,5 @@
 var assert = require("assert");
-var kanpajs = require("../transform.js");
+var XT = require("../transform.js");
 
 describe("Map Test", function() {
   it("should return map", function() {
@@ -36,7 +36,7 @@ describe("Map Test", function() {
       },
     };
 
-    var sel = kanpajs
+    var sel = XT
       .select(data)
       .transformWith(template)
       .root();
