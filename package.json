@@ -1,0 +1,19 @@
+{
+  "name": "@kanpa/transform",
+  "version": "1.0.14",
+  "description": "Template Transformation",
+  "main": "transform.js",
+  "scripts": {
+    "deploy": "np",
+    "postdeploy": "bs",
+    "test": "mocha"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "mocha": "^7.1.1"
+  }
+}
